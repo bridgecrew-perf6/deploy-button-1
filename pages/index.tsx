@@ -1,6 +1,8 @@
+import { Container, Heading,Text } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -84,8 +86,11 @@ const Home: NextPage = () => {
 
 
   return (
-    <>
-    </>
+    <Container maxW="container.lg" centerContent>
+      <Heading>Deploy Button</Heading>
+      <Text>Deploy public Git projects with the Deploy Button, providing an easy-to-use flow to set up new projects with Vercel and GitHub, GitLab, or Bitbucket.</Text>
+      <a href="https://vercel.com/new/clone?repository-url=https://github.com/christianapd/deploy-button"><img src="https://vercel.com/button" alt="Deploy with Vercel" /></a>
+    </Container>
   )
 }
 
